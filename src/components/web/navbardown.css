@@ -1,0 +1,49 @@
+.container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #282c34;
+    color: white;
+    padding: 20px;
+  }
+  
+  .header {
+    margin-bottom: 20px;
+  }
+  
+  .services {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  .service {
+    text-align: center;
+  }
+  
+  .icon {
+    font-size: 2em;
+  }
+  
+  .cta-buttons {
+    margin: 20px 0;
+  }
+  
+  .cta-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background: #61dafb;
+    border: none;
+    color: #282c34;
+    cursor: pointer;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .stat {
+    text-align: center;
+  }
+  

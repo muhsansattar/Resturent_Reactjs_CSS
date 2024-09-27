@@ -1,0 +1,70 @@
+/* Navbar.css */
+.fixed-width {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.amplify-logo {
+  height: 40px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+ul li {
+  margin-left: 20px;
+}
+
+.lato-bold {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+.toggle-button {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.toggle-button span {
+  height: 2px;
+  width: 25px;
+  background: #000;
+  margin: 3px;
+  transition: all 0.3s;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 767px) {
+  ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+  }
+
+  ul.active {
+    display: flex;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+}

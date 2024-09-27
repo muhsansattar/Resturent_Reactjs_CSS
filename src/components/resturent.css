@@ -1,0 +1,254 @@
+/* resturent.css */
+/* resturent.css */
+.navbar {
+  margin-top: 1rem;
+  background-color: seagreen;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-group-item {
+  width: 7rem;
+  text-align: center;
+  background-color: #fff;
+  border: none;
+  color: #000;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+  border-radius: 5px;
+}
+
+.btn-group-item:hover {
+  background-color: #dcdcdc;
+  transform: scale(1.05);
+}
+
+.cart-icon-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.cart{
+  z-index:1;
+  position: sticky;
+}
+.cart-icon {
+  font-size: 2rem;
+  color: white;
+}
+
+.cart-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 0.3rem 0.6rem;
+  font-size: 1rem;
+}
+
+.cart-details {
+  position: absolute;
+  top: 3rem;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1rem;
+  display: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-icon-container:hover .cart-details {
+  display: block;
+}
+/* from here i have styleld the card */
+/* resturent.css */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* #8A3E73, #FF282A, #FBE62D, #90CF44, #59B512 */
+.card-container {
+  background-color: seagreen;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+.card-container.zoomed {
+  transform: scale(1.1);
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-number {
+  background-color: #000;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.5em;
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 50px;
+}
+
+.card-author {
+  color: #fff;
+  display: block;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.card-description {
+  color: #fff;
+  font-size: 0.9em;
+  margin-bottom: 20px;
+}
+
+.extra-description {
+  display: block;
+  margin-top: 10px;
+}
+
+.card-read {
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  color: #000;
+  cursor: pointer;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+.card-media {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.card-tag {
+  background-color: #28a745;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  margin: 15px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+}
+
+.price {
+  display: block;
+  font-size: 1.2em;
+  margin-right:1rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+  color:#000;
+}
+.orderNow{
+  display: flex;
+  justify-content: space-between;
+}
+/* Additional styles for zoom effect */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.zoomed-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 80%;
+  max-height: 80%;
+  overflow: auto;
+  padding: 20px;
+  position: relative;
+}
+
+.zoomed-card .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-container.zoomed {
+  transform: scale(1.2);
+  z-index: 10;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.cart {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart h2 {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.cart ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart li {
+  margin-bottom: 0.5rem;
+}
+
+.card-tag.subtle {
+  background-color: #ff6347;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-tag.subtle:hover {
+  background-color: #ff4500;
+}
+
